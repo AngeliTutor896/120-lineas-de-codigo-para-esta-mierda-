@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 class nave {
     
     int posicion_x;
@@ -118,3 +117,4 @@ int main (void)
     
     return 0;
 }
+arreglalo o habra consecuencias
