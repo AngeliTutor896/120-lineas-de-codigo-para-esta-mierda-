@@ -8,24 +8,22 @@ class nave {
     
 public:
     nave ();
-    nave (int x, int y);
-    void posicionar (int x, int y);
-    void subir (void);
-    void bajar (void);
-    void derecha (void);
-    void izquierda (void);
-    void destruir (void);
-    void mostrar_estado (void);
+   nave (int x, int y);
+   void posicionar (int x, int y);
+   void subir (void);
+   void bajar (void);
+   void derecha (void);
+   void izquierda (void);
+   void destruir (void);
+   void mostrar_estado (void);
     
 };
-
 nave::nave()
-{
-    
-    posicion_x = 0;
-    posicion_y = 0;
+{  
+ posicion_x = 0;
+   posicion_y = 0;
     vidas = 3 ;
-}
+
 
 nave::nave (int x, int y)
 {
@@ -59,11 +57,11 @@ void nave::derecha (void)
 
 void nave::izquierda (void)
 {
-    posicion_x = posicion_x -1;
+    posicion = posicion_x -1;
 
 }
 
-void nave::destruir (void)
+void nave::detruir (void)
 {
     if (vidas>0)
     {
@@ -75,8 +73,7 @@ void nave::destruir (void)
 void nave::mostrar_estado (void)
 {
     cout << "posicion_x " << posicion_x << "\n";
-    cout << "posicion_y " << posicion_y << "\n";
-    cout << "vidas  : " << vidas << "\n";
+    cout << ""idas  : " << vidas << "\n";
 }
 
 int main (void)
@@ -96,24 +93,12 @@ int main (void)
     cout << "---Tie Fighter--- (Estado inicial) \n" ;
     tie_fighter.mostrar_estado();
     
-    enterprise.posicionar(30, 50);
-    
-    x_wing.subir ();
-    x_wing.derecha ();
-    
-    tie_fighter.destruir();
-    
-        cout << "---Enterprise--- (Estado final) \n" ;
-    enterprise.mostrar_estado();
-    
-    cout << "---X_Wing--- (Estado final) \n" ;
-    x_wing.mostrar_estado();
+    enterprise.poicionar(30, 50);
     
     cout << "---Tie Fighter--- (Estado final) \n" ;
     tie_fighter.mostrar_estado();
     
-    cout << "\nPulse Intro para finalizar..." ;
-    cin.get ();
+    cout << "\nPulse Intro para finalizar..." ;t << "\nPul
     
     return 0;
 }
